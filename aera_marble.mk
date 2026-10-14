@@ -97,8 +97,6 @@ AERA_FORCE_CASEFOLDING := 1
 # Set to 1 to enable the flashlight feature.
 AERA_FLASHLIGHT_ENABLE := 1
 AERA_FL_PATH1 := /sys/class/leds/led:torch_0
-# Might be pointless idk
-#AERA_FL_PATH2 := /sys/class/leds/led:torch_3
 
 # Set to 1 to block operations after flashing a ROM i.e. formatting data, flashing other zips etc.
 AERA_BLOCK_OPERATIONS_AFTER_ROM_FLASH := 1

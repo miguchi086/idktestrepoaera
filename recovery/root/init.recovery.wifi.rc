@@ -41,7 +41,7 @@ on property:sys.aera.wlan.up=1
     # "ON". The helper creates the node if ueventd did not and writes the
     # exact 3-byte payload; without it wlan0 never appears and wpa_supplicant
     # exits 255 in a respawn loop.
-    exec /system/bin/aera-wlan-enable.sh
+    exec /system/bin/aera_wlan_enable.sh
 
     # wlan0 appears once the mission-mode boot finishes; allow for it.
     wait /sys/class/net/wlan0 30

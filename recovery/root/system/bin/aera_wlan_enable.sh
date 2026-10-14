@@ -1,3 +1,5 @@
+#!/system/bin/sh
+
 # Cold boot wifi fix
 kmsg() { echo "<6>aera-wlan: $*" > /dev/kmsg; }
 
@@ -8,3 +10,6 @@ if [ ! -e /dev/wlan ]; then
         chmod 0660 /dev/wlan 2>/dev/null
     fi
 fi
+
+kmsg "asserting /dev/wlan ON"
+echo ON > /dev/wlan
